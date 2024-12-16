@@ -6,10 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="50"
-    d:DesignWidth="90">
+    d:DesignHeight="100"
+    d:DesignWidth="100">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="PlayerColor" Color="Silver"/>
+    </UserControl.Resources>
 
     <Canvas>
-        
+        <Ellipse   Width="20" Height="20" Fill="{StaticResource PlayerColor}"  StrokeThickness="1" Canvas.Left="40"/>
+        <Ellipse   Width="45" Height="45" Fill="{StaticResource PlayerColor}"  StrokeThickness="1" Canvas.Left="28" Canvas.Top="14"/>
+        <Path Fill="{StaticResource PlayerColor}" Canvas.Left="-50" Canvas.Top="50" UseLayoutRounding="False">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="50,50">
+                        <ArcSegment Point="150,50" Size="35,40" SweepDirection="Clockwise"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
     </Canvas>
 </local:PlayerSprite>

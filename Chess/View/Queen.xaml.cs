@@ -17,9 +17,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Chess.View
 {
-    public partial class Pawn
+    public sealed partial class Queen
     {
-        public Pawn()
+        public Queen()
         {
             this.InitializeComponent();
         }

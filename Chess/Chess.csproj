@@ -119,16 +119,31 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Bishop.xaml.cs">
+      <DependentUpon>Bishop.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ChessCanvas.xaml.cs">
       <DependentUpon>ChessCanvas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\ISpriteRenderer.cs" />
+    <Compile Include="View\King.xaml.cs">
+      <DependentUpon>King.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Knight.xaml.cs">
+      <DependentUpon>Knight.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pawn.xaml.cs">
       <DependentUpon>Pawn.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\PlayerSprite.xaml.cs">
       <DependentUpon>PlayerSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Queen.xaml.cs">
+      <DependentUpon>Queen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Rook.xaml.cs">
+      <DependentUpon>Rook.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -151,15 +166,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\Bishop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ChessCanvas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\King.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Knight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pawn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\PlayerSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Queen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Rook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,23 @@
+﻿<local:PlayerSprite
+    x:Class="Chess.View.Bishop"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Chess.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="100"
+    d:DesignWidth="100">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="PlayerColor" Color="Silver"/>
+    </UserControl.Resources>
+
+    <Canvas>
+        <Ellipse Canvas.Left="45" Canvas.Top="4" Height="10" Width="10" Fill="{StaticResource PlayerColor}"/>
+        <Path Fill="{StaticResource PlayerColor}" Data="M20,50 L50,20 L80,50 L70,60 L30,60 Z" HorizontalAlignment="Center" Canvas.Left="-0.334" Canvas.Top="-5.667" UseLayoutRounding="False" VerticalAlignment="Top"/>
+        <Path Fill="{StaticResource PlayerColor}" Data="M30,60 L70,60 L60,90 L40,90 Z" HorizontalAlignment="Center" Canvas.Left="-0.334" Canvas.Top="-4.334" UseLayoutRounding="False" VerticalAlignment="Top"/>
+        <Rectangle Width="30" Height="2" Canvas.Left="20" Canvas.Top="86" Fill="{StaticResource PlayerColor}" RadiusX="3" RadiusY="3"/>
+        <Rectangle Width="30" Height="2" Canvas.Left="50" Canvas.Top="86" Fill="{StaticResource ResourceKey=PlayerColor}" RadiusX="3" RadiusY="3"/>
+    </Canvas>
+</local:PlayerSprite>
